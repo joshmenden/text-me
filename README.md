@@ -66,6 +66,8 @@ You'll notice there's another file in the repo, `send_a_text.js`. This will allo
 
 We'll be using [Twilio](https://www.twilio.com/) to help with sending the texts, so you'll need to sign up and assign a phone number to your account.
 
+If you have trouble with this or don't want to set it up, just text me and I'll send you my credentials. Just can't have them up on the internet 😁
+
 ### Setup
 
 1. In VSCode, create a new file with the name `.env`. This is where we'll put some secrets that we don't necessarily want to publish online.
@@ -94,4 +96,4 @@ The `message` and the `phonenumber` arguments tell the program what to send and 
 
 All of the magic for sending that text message is in that file `send_a_text.js`. You'll notice we use the `twilio` package that we installed earlier using `npm install`.
 
-Boom! You are a programmer!
+Boom! 🎉 You are a programmer! 💪
