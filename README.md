@@ -59,3 +59,37 @@ In your terminal, run `node hello_world.js`
 In your VSCode, you'll the file `hello_world.js`. It's super simple! You can play around with it and have it print out different things.
 
 ## Send a Text
+
+You'll notice there's another file in the repo, `send_a_text.js`. This will allow you to send a text message from the command prompt to anybody you want!
+
+We'll be using [Twilio](https://www.twilio.com/) to help with sending the texts, so you'll need to sign up and assign a phone number to your account.
+
+### Setup
+
+1. In VSCode, create a new file with the name `.env`. This is where we'll put some secrets that we don't necessarily want to publish online.
+
+In that file, put some information that you find in the Twilio Website. The file should look just like this:
+
+```
+TWILIO_ACCOUNT_SID=(your account sid here)
+TWILIO_AUTH_TOKEN=(your auth token here)
+TWILIO_NUMBER=(the twilio number you've chosen)
+```
+
+That's it!
+
+## Send it!
+
+Now you're ready to send a text message!
+
+Run something like this in your command prompt:
+
+```
+node send_a_text.js --message "Hello World! From a text!" --phonenumber "1231231234"
+```
+
+The `message` and the `phonenumber` arguments tell the program what to send and to what number. They have to be in quotes.
+
+All of the magic for sending that text message is in that file `send_a_text.js`. You'll notice we use the `twilio` package that we installed earlier using `npm install`.
+
+Boom! You are a programmer!
