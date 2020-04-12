@@ -19,7 +19,7 @@ There are a few things we'll want to do to get your programming space set up. Le
 
 2. Download [Git](https://git-scm.com/download/win)
 
-    Git is an industry-standard program used to keep track of different versions of a program. Don't worry, you don't need to have any idea what it does yet. I'll walk you through it.
+    We call this a "version control" system but you don't need to be too concerned about it right now.
 
 3. Open the "Command Prompt" program and navigate to a folder.
 
@@ -35,7 +35,7 @@ There are a few things we'll want to do to get your programming space set up. Le
 
 4. Use Git to "clone" this repository
 
-    Once you're in a folder where you can do some coding, let's go ahead and copy this "repository." A "repository" is basically just a grouping of files. This repository is named `text-me` and is currently being hosted on Github.
+    Once you're in a folder where you can do some coding, let's go ahead and copy this "repository." A "repository" is basically just a grouping of files. This repository is named `text-me` and is currently being hosted on Github. Basically, this will just copy all of this code on this current website that you're reading to your local computer.
 
     So run `git clone https://github.com/joshmenden/text-me.git`
 
@@ -56,7 +56,9 @@ Ok! If all of that went to plan, you're ready to run Hello World!
 
 In your terminal, run `node hello_world.js`
 
-In your VSCode, you'll the file `hello_world.js`. It's super simple! You can play around with it and have it print out different things.
+You should the terminal print out a message!
+
+In your VSCode, you'll the find `hello_world.js`. It's super simple! You can play around with it and have it print out different things.
 
 ## Send a Text
 
