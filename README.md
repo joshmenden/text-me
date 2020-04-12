@@ -19,13 +19,13 @@ There are a few things we'll want to do to get your programming space set up. Le
 
 2. Download [Git](https://git-scm.com/download/win)
 
-    We call this a "version control" system but you don't need to be too concerned about it right now.
+    We call this a "version control" system but you don't need to be too concerned about it right now. For now, we will just be using git to get this code onto your computer. If you have any questions about it, just ask!
 
 3. Open the "Command Prompt" program and navigate to a folder.
 
     I've only ever done any programming on a Mac, so I'll be a little less helpful on this for Windows. But you'll want to open the Command Prompt program and navigate to a folder where you can add some files for programming. The app "Command Prompt" should be available just in your "All Programs" option, if not, you should be able to Google it pretty easily.
 
-    Once you have the prompt open, you'll want to use the following commands to navigate to a folder where we can do our coding.
+    Once you have the prompt open, you'll want to use the following commands to navigate to a folder where we can do our coding. cd stands for change directory and it is used to navigate around when you are in the command prompt.
 
         - `cd` to see what folder you are currently in
         - `dir` to see the subdirectories of the folder you are currently in
@@ -39,15 +39,15 @@ There are a few things we'll want to do to get your programming space set up. Le
 
     So run `git clone https://github.com/joshmenden/text-me.git`
 
-    And then run `cd` and you should see a new folder! Go ahead and enter that folder, and then open that folder in VSCode so you can see all of its contents.
+    And then run `cd` and you should see a new folder named text-me! Go ahead and cd into that folder. Then open that folder in VSCode so you can see all of its contents.
 
 5. Download [Node.js](https://nodejs.org/en/download/)
 
-    We will be doing our programming in JavaScript. Node.js (.js stands for JavaScript) is an engine that processes the JavaScript language and then tells the computer what to do.
+    We will be doing our programming in JavaScript. Node.js (.js stands for JavaScript) is an engine that processes the JavaScript language and then tells the computer what to do. It does not matter where you download it to.
 
 6. Install Libraries for Program
 
-    Once you're in the `/text-me` folder that you just "cloned," we need to download some libraries to help with our program. So go ahead and run `npm install` to install them.
+    Once you're in the `/text-me` folder that you just "cloned," we need to download some libraries to help with our program. A library is a set of code that someone else wrote that does some useful thing. We can use those libraries to help in our programs. We can get more into libraries later, but for now you just need to know that text-me needs some libraries and we need to install them. So go ahead and run `npm install` from the `text-me` folder in your command prompt to install them.
 
 
 ### Run the Program!
@@ -66,7 +66,7 @@ You'll notice there's another file in the repo, `send_a_text.js`. This will allo
 
 We'll be using [Twilio](https://www.twilio.com/) to help with sending the texts, so you'll need to sign up and assign a phone number to your account.
 
-If you have trouble with this or don't want to set it up, just text me and I'll send you my credentials. Just can't have them up on the internet 😁
+If you have trouble with this or don't want to set it up, just call me and I'll send you my credentials -- just can't have them up on the internet 😁
 
 ### Setup
 
@@ -92,7 +92,7 @@ Run something like this in your command prompt:
 node send_a_text.js --message "Hello World! From a text!" --phonenumber "1231231234"
 ```
 
-The `message` and the `phonenumber` arguments tell the program what to send and to what number. They have to be in quotes.
+The `message` and the `phonenumber` arguments tell the program what to send and to what number. They have to be in quotes. The phone number should be whatever phone number you want to send a message to.
 
 All of the magic for sending that text message is in that file `send_a_text.js`. You'll notice we use the `twilio` package that we installed earlier using `npm install`.
 
